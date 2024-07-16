@@ -3,85 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admintek Training Page</title>
+<title>List of Courses - Admintek Training</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <style>
-    /* Basic reset and body styles */
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
     body {
         font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f0f0f0;
-        color: #333;
-        margin: 20px;
+        background-color: #f4f5f5; /* Secondary color */
+        padding-top: 20px;
     }
-    /* Header styles */
-    header {
-        background-color: #004165;
-        color: #fff;
+    .header {
+        background-color: #ffc700; /* Primary color */
         padding: 10px 0;
         text-align: center;
-    }
-    header h1 {
-        font-size: 2em;
-    }
-    /* Main content container */
-    .container {
-        max-width: 1200px;
-        margin: auto;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    /* Section styles */
-    section {
         margin-bottom: 20px;
     }
-    section h2 {
-        color: #004165;
-        margin-bottom: 10px;
+    .header img {
+        max-width: 200px;
+        height: auto;
     }
-    section p {
-        margin-bottom: 10px;
+    .breadcrumbs {
+        background-color: #e9ecef; /* Bootstrap default background color for breadcrumbs */
+        padding: 10px 0;
+        margin-bottom: 20px;
     }
-    /* Footer styles */
-    footer {
+    .breadcrumbs ol {
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    .list-courses {
+        margin-top: 20px;
+    }
+    .footer {
+        background-color: #343a40; /* Bootstrap default dark background color */
+        color: #fff;
+        padding: 20px 0;
         text-align: center;
         margin-top: 20px;
-        padding: 10px 0;
-        background-color: #004165;
-        color: #fff;
     }
 </style>
 </head>
 <body>
-    <header>
-        <h1>Admintek Training</h1>
+
+<div class="container">
+    <!-- Header with logo -->
+    <header class="header">
+        <div class="container">
+            <img src="https://via.placeholder.com/200x80" alt="Admintek Logo">
+        </div>
     </header>
 
-    <div class="container">
-        <section>
-            <h2>Upcoming Courses</h2>
-            <p>Placeholder text for upcoming courses...</p>
-        </section>
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb" class="breadcrumbs">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Courses</li>
+            </ol>
+        </div>
+    </nav>
 
-        <section>
-            <h2>Training Services</h2>
-            <p>Placeholder text for training services...</p>
-        </section>
+    <!-- List of Courses -->
+    <section class="list-courses">
+        <div class="container">
+            <h2>List of Courses</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Course Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="compex.html">CompEx Ex05-Ex06 Combustible Dust</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2 Day Offshore Legionella and Water Hygiene Management Course</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Understanding Regulations: General Product Safety and Risk</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>CompEx Ex Foundation</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>CompEx Ex01-Ex04 Gas &amp; Vapours</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>CompEx Ex11 Mechanical</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Oil in Water Training</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>CompEx Ex12 Application Design Engineers</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Oil in Water Training</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-        <section>
-            <h2>Why Choose Us?</h2>
-            <p>Placeholder text for why choose us...</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Admintek. All rights reserved.</p>
+    <!-- Footer with contact information -->
+    <footer class="footer">
+        <div class="container">
+            <p>Contact Us:</p>
+            <p>123 Example Street, City, Country</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Email: info@admintek.com</p>
+        </div>
     </footer>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
