@@ -25,10 +25,17 @@
         background-color: #e9ecef; /* Bootstrap default background color for breadcrumbs */
         padding: 10px 0;
         margin-bottom: 20px;
+        position: relative; /* Ensure relative positioning */
     }
     .breadcrumbs ol {
         margin-bottom: 0;
         padding-left: 0;
+    }
+    .cart-icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
     }
     .course-details {
         margin-top: 20px;
@@ -45,6 +52,13 @@
         padding: 20px;
         margin-bottom: 20px;
     }
+    .footer {
+        background-color: #343a40; /* Bootstrap default dark background color */
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 20px;
+    }
 </style>
 </head>
 <body>
@@ -57,7 +71,7 @@
         </div>
     </header>
 
-    <!-- Breadcrumbs -->
+    <!-- Breadcrumbs with Cart Icon -->
     <nav aria-label="breadcrumb" class="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb">
@@ -65,6 +79,12 @@
                 <li class="breadcrumb-item"><a href="#">Courses</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Course Details</li>
             </ol>
+            <!-- Cart Icon -->
+            <span class="cart-icon">
+                <div id="weblink-Basket">
+                  <span class="placeholder animated"></span>
+                </div>
+            </span>
         </div>
     </nav>
 
@@ -164,6 +184,11 @@
       document.getElementById('weblink-EventList'),
       'EventList',
       {"showDateFilter":true,"showLocationFilter":true,"showCourseFilter":true,"showCategoryFilter":true,"showTitleColumn":true,"showLocationColumn":true,"showVenueColumn":false,"showStartDateColumn":true,"showEndDateColumn":true,"showDateAndTimeColumn":false,"showDurationColumn":false,"showSessionsColumn":true,"showTimeColumn":true,"showPlacesRemainingColumn":false,"showPriceColumn":false,"showAddToCartColumn":true,"showClassroomStartDateColumn":false,"showClassroomDurationColumn":false,"showClassroomTimeColumn":false,"showLmsStartDateColumn":false,"showLmsDurationColumn":false,"showLmsTimeColumn":false,"code":"COM003"}
+    );
+    webLink.mount(
+      document.getElementById('weblink-Basket'),
+      'Basket',
+      {"showBasketPopover":false,"cartUrl":"cart.index"}
     );
   });
 </script>
