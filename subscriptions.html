@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Details - Admintek Training</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f5f5; /* Secondary color */
+        padding-top: 20px;
+    }
+    .weblink .eventList table th{ background-color: #ffc700 !important; color: #000 !important}
+
+.weblink .btn-success{
+background-color: #ffc700 !important; color:# 000 !important}
+
+
+    .header {
+        background-color: #ffc700; /* Primary color */
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header img {
+        max-width: 200px;
+        height: auto;
+    }
+    .breadcrumbs {
+        background-color: #e9ecef; /* Bootstrap default background color for breadcrumbs */
+        padding: 10px 0;
+        margin-bottom: 20px;
+        position: relative; /* Ensure relative positioning */
+    }
+    .breadcrumbs ol {
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    .cart-icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .course-details {
+        margin-top: 20px;
+    }
+    .section-title {
+        background-color: #ffc700; /* Primary color */
+        color: #000; /* Font color */
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .section-content {
+        background-color: #fff; /* White background */
+        color: #000; /* Font color */
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .footer {
+        background-color: #343a40; /* Bootstrap default dark background color */
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header with logo -->
+    <header class="header">
+        <div class="container">
+            <img src="https://via.placeholder.com/200x80" alt="Admintek Logo">
+        </div>
+    </header>
+
+    <!-- Breadcrumbs with Cart Icon -->
+    <nav aria-label="breadcrumb" class="breadcrumbs">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Courses</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Course Details</li>
+            </ol>
+            <!-- Cart Icon -->
+            <span class="cart-icon">
+                <div id="weblink-Basket">
+                  <span class="placeholder animated"></span>
+                </div>
+            </span>
+        </div>
+    </nav>
+
+    <!-- Course Details -->
+    <section class="course-details">
+        <div class="container">
+            <div class="section-title">
+                <h2>Subscriptions</h2>
+            </div>
+
+        <div class="container mt-4">
+        <div class="row">
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                  
+                    <div class="card-body">
+                        <h5 class="card-title">Basic Access</h5>
+                        <ul>
+                            <li>Gain foundational knowledge through core training modules.</li>
+                            <li>Interactive quizzes to test your understanding.</li>
+                            <li>Introductory resources and materials.</li>
+                            <li>Ideal for those new to the field or looking to refresh their basic skills.</li>
+                        </ul>
+                        <a href="basic_pass.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                
+                    <div class="card-body">
+                        <h5 class="card-title">Pro Access</h5>
+                        <ul>
+                            <li>Full access to advanced courses and specialized content.</li>
+                            <li>In-depth case studies and real-world scenarios.</li>
+                            <li>Personalized support and mentorship from industry experts.</li>
+                            <li>Certification upon completion to enhance your professional credentials.</li>
+                           
+                        </ul>
+                        <a href="pro_pass.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            
+        </div>
+        
+        
+        
+    </section>
+
+    <!-- Footer with contact information -->
+    <footer class="footer">
+        <div class="container">
+            <p>Contact Us:</p>
+            <p>123 Example Street, City, Country</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Email: info@admintek.com</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
