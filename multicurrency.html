@@ -83,6 +83,10 @@
       </div>
     </section>
 
+    <div id="weblink-TrainingRequest">
+        <span class="placeholder animated"></span>
+      </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -168,6 +172,12 @@
         showAddToCartColumn: true,
         code: "Cyber_F_24"
       });
+
+      webLink.mount(
+      document.getElementById('weblink-TrainingRequest'),
+      'TrainingRequest',
+      {"interestId":"Q291cnNlVGVtcGxhdGU6NDU="}
+    );
     };
     document.body.appendChild(script);
   </script>
