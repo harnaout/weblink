@@ -1,0 +1,71 @@
+<script>
+  window._wq = window._wq || [];
+  _wq.push({
+    id: "5bbw8l7kl5",
+    options: {
+      videoFoam: true,
+      playerColor: "ff0000",
+      plugin: {
+        "requireEmail-v1": {
+          lowerText: "Thanks in advance!"
+        }
+      }
+    }
+  });
+
+  // Language Switcher logic
+  function switchLanguage(language) {
+    // Here you can dynamically change the content of your embed based on the selected language
+    // For example, change the lowerText dynamically
+    if (language === 'fr') {
+      _wq.push({
+        id: "5bbw8l7kl5",
+        options: {
+          plugin: {
+            "requireEmail-v1": {
+              lowerText: "Merci d'avance!"
+            }
+          }
+        }
+      });
+    } else if (language === 'es') {
+      _wq.push({
+        id: "5bbw8l7kl5",
+        options: {
+          plugin: {
+            "requireEmail-v1": {
+              lowerText: "¡Gracias de antemano!"
+            }
+          }
+        }
+      });
+    } else {
+      // Default English text
+      _wq.push({
+        id: "5bbw8l7kl5",
+        options: {
+          plugin: {
+            "requireEmail-v1": {
+              lowerText: "Thanks in advance!"
+            }
+          }
+        }
+      });
+    }
+  }
+</script>
+
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+<!-- Wistia Embed -->
+<div class="wistia_embed_container" style="position: relative; width: 640px; height: 360px;">
+  <div class="wistia_embed wistia_async_5bbw8l7kl5" style="width: 100%; height: 100%;"></div>
+
+  <!-- Language Switcher Buttons -->
+  <div class="language-switcher" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">
+    <button onclick="switchLanguage('en')" style="color: white; background: none; border: 1px solid white; padding: 5px 10px; margin: 0 5px; cursor: pointer;">English</button>
+    <button onclick="switchLanguage('fr')" style="color: white; background: none; border: 1px solid white; padding: 5px 10px; margin: 0 5px; cursor: pointer;">Français</button>
+    <button onclick="switchLanguage('es')" style="color: white; background: none; border: 1px solid white; padding: 5px 10px; margin: 0 5px; cursor: pointer;">Español</button>
+  </div>
+</div>
+
