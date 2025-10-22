@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Details - Admintek Training</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f5f5; /* Secondary color */
+        padding-top: 20px;
+    }
+    .weblink .eventList table th{ background-color: #ffc700 !important; color: #000 !important}
+
+.weblink .btn-success{
+background-color: #ffc700 !important; color:# 000 !important}
+
+    .weblink .jumbotron{
+        background-color: #ffc700 !important; color: #000 !important
+    }
+
+
+    .header {
+        background-color: #ffc700; /* Primary color */
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header img {
+        max-width: 200px;
+        height: auto;
+    }
+    .breadcrumbs {
+        background-color: #e9ecef; /* Bootstrap default background color for breadcrumbs */
+        padding: 10px 0;
+        margin-bottom: 20px;
+        position: relative; /* Ensure relative positioning */
+    }
+    .breadcrumbs ol {
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    .cart-icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .course-details {
+        margin-top: 20px;
+    }
+    .section-title {
+        background-color: #ffc700; /* Primary color */
+        color: #000; /* Font color */
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .section-content {
+        background-color: #fff; /* White background */
+        color: #000; /* Font color */
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .footer {
+        background-color: #343a40; /* Bootstrap default dark background color */
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header with logo -->
+    <header class="header">
+        <div class="container">
+            <img src="https://via.placeholder.com/200x80" alt="Admintek Logo">
+        </div>
+    </header>
+
+    <!-- Breadcrumbs with Cart Icon -->
+    <nav aria-label="breadcrumb" class="breadcrumbs">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Courses</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Course Details</li>
+            </ol>
+            
+        </div>
+    </nav>
+
+    <!-- Course Details -->
+    <section class="course-details">
+        <div class="container">
+          <div id="weblink-CourseDetails">
+  <span class="placeholder animated"></span>
+</div>
+                        
+        </div>
+    </section>
+        
+        
+    </section>
+
+    <!-- Footer with contact information -->
+    <footer class="footer">
+        <div class="container">
+            <p>Contact Us:</p>
+            <p>123 Example Street, City, Country</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Email: info@admintek.com</p>
+        </div>
+    </footer>
+</div>
+<!-- Styling  -->
+<style>@keyframes shimmer{0%{background-position:-1000px 0}100%{background-position:1000px 0}}.placeholder{border-radius:4px;margin-top:12px;margin-bottom:12px;width:100%;height:1em;background:#f3f9fc;display:inline-block;background-size:1000px 100%}@media only screen and (min-width: 600px){.placeholder{margin:12px 20%;max-width:60%}}@media only screen and (min-width: 1200px){.placeholder{margin:12px 15%;max-width:70%}}.placeholder.animated{animation:shimmer 4s infinite linear;background-image:linear-gradient( to right, #f3f9fc 4%, #e7f3f9 25%, #f3f9fc 36% )}</style>
+<link
+  rel="stylesheet"
+  href="https://d5bdbb802b042a-udemyweblink.administrateweblink.com/static/css/main.css"
+/>
+<!-- JQuery - you can skip this line if you already have JQuery in your app -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Weblink-->
+<script src="https://d5bdbb802b042a-udemyweblink.administrateweblink.com/static/js/weblink.bundle.min.js" defer ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Create Weblink instance and mount widgets-->
+<script>
+  $(function () {
+    const webLinkConfig = {
+      portalAddress: 'd5bdbb802b042a-udemyweblink.administrateweblink.com',
+      hashRouting: false,
+      timezone: 'Europe/London',
+      hooks: {
+        onCheckoutNavigation: function(redirectUrl) {
+          // ... perform whatever actions necessary here
+
+          // Returning false below will prevent the usual redirect to
+          // the checkout page to happen. If you want to redirect there
+          // after you have completed your actions, you can use the
+          // redirectUrl provided to the function.
+          // return false;
+        },
+      },
+      analyticsHandler: function (event) {
+        // Send event to the analytics provider.
+        // For list of tracked events and examples, [see our Documentation](https://developer.getadministrate.com/docs/weblink/Widgets/04_analytics.md)
+
+        // For example, if using Google Tag Manager,
+        //   1. Ensure snippet is added to your website according to the [instructions](https://developers.google.com/tag-platform/tag-manager/web)
+        //   2. Then call: window.dataLayer.push(event)
+      }
+    };
+
+    const webLink = new window.WebLink(webLinkConfig);
+    
+    webLink.mount(
+      document.getElementById('weblink-CourseDetails'),
+      'CourseDetails',
+      {"showDateFilter":true,"showLocationFilter":true,"showCourseFilter":true,"showCategoryFilter":true,"showTitleColumn":true,"showLocationColumn":true,"showVenueColumn":false,"showStartDateColumn":true,"showEndDateColumn":false,"showDateAndTimeColumn":false,"showDurationColumn":true,"showSessionsColumn":true,"alwaysHideSessionsColumn":false,"showTimeColumn":true,"showPlacesRemainingColumn":true,"showPriceColumn":true,"showAddToCartColumn":true,"showClassroomStartDateColumn":false,"showClassroomDurationColumn":false,"showClassroomTimeColumn":false,"showLmsStartDateColumn":false,"showLmsDurationColumn":false,"showLmsTimeColumn":false,"code":"Cyber_A_245"}
+    );
+  });
+</script>
+</body>
+</html>
